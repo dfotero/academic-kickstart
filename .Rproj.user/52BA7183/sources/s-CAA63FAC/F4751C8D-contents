@@ -2,17 +2,17 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Role of higher moments in the accuracy of G/G/m approximations"
-event: INFORMS Annual Meeting 2010
-event_url:
-location: 
-address:
-  street:
-  city: Austin
-  region: Texas
-  postcode: 
-  country:United States
-summary: 
-abstract:
+event: "INFORMS Annual Meeting 2010"
+event_url:""
+location: ""
+address:""
+  street:""
+  city: "Austin"
+  region: "Texas"
+  postcode:"" 
+  country: "United States"
+summary: ""
+abstract:""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

@@ -3,16 +3,16 @@
 
 title: "Role of higher moments in the accuracy of G/G/m approximations"
 event: "INFORMS Annual Meeting 2010"
-event_url:""
+event_url: ""
 location: ""
-address:""
-  street:""
+address: ""
+  street: ""
   city: "Austin"
   region: "Texas"
-  postcode:"" 
+  postcode: "" 
   country: "United States"
 summary: ""
-abstract:""
+abstract: ""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

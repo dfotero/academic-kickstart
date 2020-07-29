@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3016711121",
+    "hash" : "2389623426",
     "id" : "F4751C8D",
-    "lastKnownWriteTime" : 1596055881,
-    "last_content_update" : 1596055881177,
+    "lastKnownWriteTime" : 1596055935,
+    "last_content_update" : 1596055935775,
     "path" : "~/GitHub/academic-kickstart/content/talk/2010Informs.md",
     "project_path" : "content/talk/2010Informs.md",
     "properties" : {
-        "cursorPosition" : "29,15",
-        "scrollLine" : "17"
+        "cursorPosition" : "14,10",
+        "scrollLine" : "0"
     },
     "relative_order" : 4,
     "source_on_save" : false,

@@ -24,7 +24,7 @@ abstract: "In the airline industry, deciding the ticket price for each flight di
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: ["Revenue management","Phase-type distributions","Stochastic dynamic programming","Dynamic pricing","OR in airlines"]
+tags: ["Revenue management","Phase-type distributions","Markov decision process","Dynamic pricing","OR in airlines"]
 categories: []
 featured: false
 

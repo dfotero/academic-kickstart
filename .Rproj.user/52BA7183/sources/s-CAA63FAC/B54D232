@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3645453145",
+    "hash" : "40912370",
     "id" : "B54D232",
-    "lastKnownWriteTime" : 1596056262,
-    "last_content_update" : 1596056262416,
+    "lastKnownWriteTime" : 1596082059,
+    "last_content_update" : 1596082059009,
     "path" : "~/GitHub/academic-kickstart/content/home/talks.md",
     "project_path" : "content/home/talks.md",
     "properties" : {
-        "cursorPosition" : "41,10",
-        "scrollLine" : "23"
+        "cursorPosition" : "32,0",
+        "scrollLine" : "19"
     },
     "relative_order" : 5,
     "source_on_save" : false,

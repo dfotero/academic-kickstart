@@ -24,7 +24,7 @@ date_end: 2016-11-15T12:30:00-12:30
 publishDate: 2020-07-29T16:27:07-04:00
 
 authors: ["Daniel Otero-Leon", "Mariana Escallón","Cristina López","Raha Akhavan-Tabatabaei"]
-tags: ["Revenue management","Stochastic dynamic programming","Dilution","Airline promotion","OR in airlines"]
+tags: ["Revenue management","Markov decision process","Dilution","Airline promotion","OR in airlines"]
 
 # Is this a featured talk? (true/false)
 featured: false

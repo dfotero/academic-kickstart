@@ -1,21 +1,21 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1596084021999.000,
+    "created" : 1596085180403.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2577186551",
-    "id" : "9B274260",
-    "lastKnownWriteTime" : 1596084241,
-    "last_content_update" : 1596084241413,
+    "hash" : "1850028458",
+    "id" : "8D4D864D",
+    "lastKnownWriteTime" : 1596085190,
+    "last_content_update" : 1596085190412,
     "path" : "~/GitHub/academic-kickstart/content/talk/2017INFORMS2/index.md",
     "project_path" : "content/talk/2017INFORMS2/index.md",
     "properties" : {
-        "cursorPosition" : "26,56",
+        "cursorPosition" : "19,31",
         "scrollLine" : "15"
     },
-    "relative_order" : 3,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

@@ -1,30 +1,30 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "An optimum pricing policy for a multiclass problem in the airline industry."
-event: "INFORMS Annual Meeting 2012"
-event_url: "https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/Past-Events/INFORMS-Annual-Meeting-2012-Phoenix"
-location: "Phoenix Convention Center"
+title: "Cholesterol Follow-up Policy in the Context of Preventive Treatment of Cardiovascular Disease."
+event: "INFORMS Annual Meeting 2019"
+event_url: "http://meetings2.informs.org/wordpress/seattle2019/"
+location: "Washington State Convention Center"
 address: 
   street:
-  city: "Phoenix"
-  region: "Arizona"
+  city: "Seattle"
+  region: "Washington"
   postcode: 
   country: "United States"
 summary:
-abstract:
+abstract: "Preventing chronic diseases is an essential aspect of medical care for healthy patients, but deciding when to collect information, such as the patient’s cholesterol levels, is difficult. Measuring too frequently may be unnecessary and costly; on the other hand, measuring too infrequently means the patient may forgo needed treatment and experience adverse events related to the disease. We present results from estimating a stochastic model based on longitudinal data for cholesterol in a large cohort of patients seen in the national Veterans Affairs health system. We further use this model to study policies for when to collect measurements to assess the need for cholesterol lowering medications."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2012-10-14
-date_end: 2012-10-17
-all_day: true
+date: 2019-10-20T16:30:00-04:30
+date_end: 2019-10-20T18:00:00-18:00
+#all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: 2020-07-29T16:27:07-04:00
 
-authors: ["Daniel Otero-Leon", "Raha Akhavan-Tabatabaei"]
-tags: ["Revenue management","Phase-type distributions","Stochastic dynamic programming","Dynamic pricing","OR in airlines"]
+authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
+tags: ["Healthcare","Stochastic dynamic programming","Cardiovascular diseases"]
 
 # Is this a featured talk? (true/false)
 featured: false

@@ -1,21 +1,21 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1596084543648.000,
+    "created" : 1596085280075.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "698372815",
-    "id" : "327A50A0",
-    "lastKnownWriteTime" : 1596084651,
-    "last_content_update" : 1596084651866,
+    "hash" : "706571310",
+    "id" : "963D2EF1",
+    "lastKnownWriteTime" : 1596085330,
+    "last_content_update" : 1596085330805,
     "path" : "~/GitHub/academic-kickstart/content/talk/2019INFORMSHealthcare/index.md",
     "project_path" : "content/talk/2019INFORMSHealthcare/index.md",
     "properties" : {
-        "cursorPosition" : "10,23",
-        "scrollLine" : "0"
+        "cursorPosition" : "26,79",
+        "scrollLine" : "15"
     },
-    "relative_order" : 4,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

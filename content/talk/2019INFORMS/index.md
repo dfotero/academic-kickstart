@@ -24,7 +24,7 @@ date_end: 2019-10-20T18:00:00-18:00
 publishDate: 2020-07-29T16:27:07-04:00
 
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
-tags: ["Healthcare","Stochastic dynamic programming","Cardiovascular diseases"]
+tags: ["Healthcare","Markov decision process","Cardiovascular diseases"]
 
 # Is this a featured talk? (true/false)
 featured: false

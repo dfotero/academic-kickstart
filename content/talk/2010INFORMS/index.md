@@ -3,28 +3,28 @@
 
 title: "Role of higher moments in the accuracy of G/G/m approximations"
 event: "INFORMS Annual Meeting 2010"
-event_url: ""
-location: ""
-address: ""
-  street: ""
+event_url: "https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/Past-Events/INFORMS-Annual-Meeting-2010-Austin"
+location: "Austin Convention Center"
+address: 
+  street:
   city: "Austin"
   region: "Texas"
-  postcode: "" 
+  postcode: 
   country: "United States"
-summary: ""
-abstract: ""
+summary:
+abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-#date: 2020-07-29T16:27:07-04:00
-#date_end: 2020-07-29T16:27:07-04:00
+date: 2010-11-07
+date_end: 2010-11-10
 #all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: 2020-07-29T16:27:07-04:00
 
 authors: ["Daniel Otero-Leon", "Raha Akhavan-Tabatabaei"]
-tags: ["Queueing Models"]
+tags: ["Queueing Theory"]
 
 # Is this a featured talk? (true/false)
 featured: false

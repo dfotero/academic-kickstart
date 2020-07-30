@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2144953644",
     "id" : "96FED850",
-    "lastKnownWriteTime" : 1596055935,
-    "last_content_update" : 1596055935,
+    "lastKnownWriteTime" : 1596082745,
+    "last_content_update" : 1596082745760,
     "path" : "~/GitHub/academic-kickstart/content/talk/2010INFORMS/index.md",
     "project_path" : "content/talk/2010INFORMS/index.md",
     "properties" : {
-        "cursorPosition" : "0,3",
-        "scrollLine" : "8"
+        "cursorPosition" : "26,23",
+        "scrollLine" : "14"
     },
     "relative_order" : 5,
     "source_on_save" : false,

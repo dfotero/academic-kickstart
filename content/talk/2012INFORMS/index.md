@@ -24,7 +24,7 @@ all_day: true
 publishDate: 2020-07-29T16:27:07-04:00
 
 authors: ["Daniel Otero-Leon", "Raha Akhavan-Tabatabaei"]
-tags: ["Revenue management","Phase-type distributions","Markov Decision Process","Dynamic pricing","OR in airlines"]
+tags: ["Revenue management","Phase-type distributions","Markov decision process","Dynamic pricing","OR in airlines"]
 
 # Is this a featured talk? (true/false)
 featured: false

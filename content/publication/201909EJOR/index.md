@@ -24,7 +24,7 @@ abstract: "Offering promotions has become common practice in the airline industr
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: ["Revenue management","Stochastic dynamic programming","Dilution","Airline promotion","OR in airlines"]
+tags: ["Revenue management","Markov decision process","Dilution","Airline promotion","OR in airlines"]
 categories: []
 featured: false
 

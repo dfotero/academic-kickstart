@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "An optimum pricing policy for a multiclass problem in the airline industry."
+title: "Talk: An optimum pricing policy for a multiclass problem in the airline industry."
 event: "INFORMS Annual Meeting 2012"
 event_url: "https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/Past-Events/INFORMS-Annual-Meeting-2012-Phoenix"
 location: "Phoenix Convention Center"
@@ -24,7 +24,7 @@ all_day: true
 publishDate: 2020-07-29T16:27:07-04:00
 
 authors: ["Daniel Otero-Leon", "Raha Akhavan-Tabatabaei"]
-tags: ["Revenue management","Phase-type distributions","Markov decision process","Dynamic pricing","OR in airlines"]
+tags: ["Revenue management","Phase-type distributions","Markov decision process","Dynamic pricing","OR in airlines","Conference Talk"]
 
 # Is this a featured talk? (true/false)
 featured: false

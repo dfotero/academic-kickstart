@@ -18,27 +18,45 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
+  title = "Lecturer"
+  company = "IIND 2104: Stochastic Modelling"
+  company_url = "https://industrial.uniandes.edu.co/"
+  location = "Universidad de los Andes, Bogota, Colombia"
+  date_start = "2012-08-01"
+  date_end = "2018-05-30"
   description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
+  Topics Taught: Stochastic Modelling, Exponential distribution, Poisson Process, Markov Chains, and Dynamic Programming.
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Lecturer"
+  company = "IIND 3107: Marketing Engineering"
+  company_url = "https://industrial.uniandes.edu.co/"
+  location = "Universidad de los Andes, Bogota, Colombia"
+  date_start = "2017-01-15"
+  date_end = "2018-05-30"
+  description = """
+  Topics Taught: Marketing Basics, Segmentation, Forecasting, Pricing, Social Network Marketing, New Products Strategy.
+  """
+  [[experience]]
+  title = "Lecturer"
+  company = "IIND 3113: Discrete Event Simulation"
+  company_url = "https://industrial.uniandes.edu.co/"
+  location = "Universidad de los Andes, Bogota, Colombia"
+  date_start = "2014-06-01"
+  date_end = "2017-12-10"
+  description = """
+  Topics Taught: Input Modelling, Random Variable Generation Models,  Validation and Verification, Experimental Design, Variance Reduction Approaches, and Simulation with SIMIO.
+  """
+  [[experience]]
+  title = "Lecturer"
+  company = "IIND 2109: Decision Analysis Tools"
+  company_url = "https://industrial.uniandes.edu.co/"
+  location = "Universidad de los Andes, Bogota, Colombia"
+  date_start = "2013-08-01"
+  date_end = "2016-12-10"
+  description = """
+  Topics Taught: Excel, Visual Basic, Access, and SQL.
+  """
 
 +++

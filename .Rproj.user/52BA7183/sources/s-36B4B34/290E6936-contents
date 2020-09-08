@@ -18,10 +18,10 @@ organizations:
   url: "https://ioe.engin.umich.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include Markov Decision Processes applied to Healthcare and Revenue Management.
 
 interests:
-- Dynamic Programming
+- Markov Decision Processes
 - Stochastic Optimization
 - Healthcare
 - Revenue Management

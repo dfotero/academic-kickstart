@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "639194363",
+    "hash" : "845928550",
     "id" : "1D065D65",
-    "lastKnownWriteTime" : 1599540688,
-    "last_content_update" : 1599540688565,
+    "lastKnownWriteTime" : 1599541032,
+    "last_content_update" : 1599541032998,
     "path" : "~/GitHub/academic-kickstart/content/home/experience.md",
     "project_path" : "content/home/experience.md",
     "properties" : {
-        "cursorPosition" : "38,119",
-        "scrollLine" : "23"
+        "cursorPosition" : "33,96",
+        "scrollLine" : "20"
     },
     "relative_order" : 6,
     "source_on_save" : false,

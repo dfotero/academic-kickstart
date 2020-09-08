@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD IOE Student
+role: PhD IOE Candidate
 
 # Organizations/Affiliations
 organizations:

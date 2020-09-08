@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3853527600",
+    "hash" : "2723213250",
     "id" : "5090EFA",
-    "lastKnownWriteTime" : 1599535948,
-    "last_content_update" : 1599535948074,
+    "lastKnownWriteTime" : 1599536066,
+    "last_content_update" : 1599536066058,
     "path" : "~/GitHub/academic-kickstart/content/talk/2020Buffalo/index.md",
     "project_path" : "content/talk/2020Buffalo/index.md",
     "properties" : {
-        "cursorPosition" : "23,34",
-        "scrollLine" : "19"
+        "cursorPosition" : "17,2",
+        "scrollLine" : "8"
     },
     "relative_order" : 4,
     "source_on_save" : false,

@@ -8,7 +8,7 @@ location: "Universidad de los Andes"
 address: 
   street:
   city: "Bogota"
-  region: 
+  region: "Colombia."
   postcode: 
   country: "Colombia"
 summary:

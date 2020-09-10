@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4129324593",
+    "hash" : "2718682437",
     "id" : "F6D30C04",
-    "lastKnownWriteTime" : 1599761168,
-    "last_content_update" : 1599761168165,
+    "lastKnownWriteTime" : 1599761985,
+    "last_content_update" : 1599761985997,
     "path" : "~/GitHub/academic-kickstart/config/_default/params.toml",
     "project_path" : "config/_default/params.toml",
     "properties" : {
-        "cursorPosition" : "284,35",
-        "scrollLine" : "270"
+        "cursorPosition" : "284,24",
+        "scrollLine" : "272"
     },
     "relative_order" : 2,
     "source_on_save" : false,

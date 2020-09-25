@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2278311393",
+    "hash" : "369679126",
     "id" : "191FAB4",
-    "lastKnownWriteTime" : 1601063234,
-    "last_content_update" : 1601063234106,
+    "lastKnownWriteTime" : 1601067931,
+    "last_content_update" : 1601067931646,
     "path" : "~/GitHub/academic-kickstart/content/talk/2020INFORMS/index.md",
     "project_path" : "content/talk/2020INFORMS/index.md",
     "properties" : {
-        "cursorPosition" : "23,23",
-        "scrollLine" : "8"
+        "cursorPosition" : "26,79",
+        "scrollLine" : "15"
     },
     "relative_order" : 5,
     "source_on_save" : false,

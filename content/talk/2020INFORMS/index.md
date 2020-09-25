@@ -24,7 +24,7 @@ date_end: 2020-11-12T17:45:00-17:45
 publishDate: 2020-09-24T12:00:00-12:00
 
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
-tags: ["Healthcare","Dynamic Forecasting","Cardiovascular diseases","Conference Talk"]
+tags: ["Healthcare","Dynamic Forecasting","Cardiovascular diseases","Adherence","Conference Talk"]
 
 # Is this a featured talk? (true/false)
 featured: false

@@ -23,7 +23,7 @@ date_end: 2019-07-27T09:30:00-09:30
 # Schedule page publish date (NOT talk date).
 publishDate: 2020-07-29T16:27:07-04:00
 
-authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri","Adrian Gavica Saucedo", "Jeremy Sussman", "Rodney A. Hayward"]
+authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri","Adrian Gavica Saucedo","Jeremy Sussman","Rodney A. Hayward"]
 tags: ["Healthcare","Markov decision process","Cardiovascular diseases","Conference Talk"]
 
 # Is this a featured talk? (true/false)

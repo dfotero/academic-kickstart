@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "692971787",
+    "hash" : "1120851553",
     "id" : "5560529A",
-    "lastKnownWriteTime" : 1601064877,
-    "last_content_update" : 1601064877632,
+    "lastKnownWriteTime" : 1601066811,
+    "last_content_update" : 1601066811336,
     "path" : "~/GitHub/academic-kickstart/content/talk/2019INFORMSHealthcare/index.md",
     "project_path" : "content/talk/2019INFORMSHealthcare/index.md",
     "properties" : {
-        "cursorPosition" : "25,132",
-        "scrollLine" : "15"
+        "cursorPosition" : "25,131",
+        "scrollLine" : "14"
     },
     "relative_order" : 4,
     "source_on_save" : false,

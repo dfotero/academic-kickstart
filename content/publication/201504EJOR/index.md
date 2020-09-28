@@ -4,7 +4,7 @@
 title: "A stochastic dynamic pricing model for the multiclass problems in the airline industry (2015)"
 authors: ["Daniel Otero-Leon", "Raha Akhavan-Tabatabaei"]
 date: 2015-04-01
-doi: "10.1016/j.ejor.2014.09.038"
+doi: 
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-07-29T01:18:35-04:00

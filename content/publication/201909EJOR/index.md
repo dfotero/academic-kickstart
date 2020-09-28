@@ -4,7 +4,7 @@
 title: "Optimal timing of airline promotions under dilution (2019)"
 authors: ["Daniel Otero-Leon", "Mariana Escallón","Cristina López","Raha Akhavan-Tabatabaei"]
 date: 2019-09-19
-doi: "10.1016/j.ejor.2019.03.011"
+doi:
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2020-07-29T01:18:35-04:00
@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://www.sciencedirect.com/science/article/abs/pii/S0377221719302504?via%3Dihub
+url_pdf: 
 url_code:
 url_dataset:
 url_poster:

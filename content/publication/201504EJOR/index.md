@@ -16,8 +16,8 @@ publishDate: 2020-07-29T01:18:35-04:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "European Journal of Operational Research"
+publication_short: "EJOR"
 
 abstract: "In the airline industry, deciding the ticket price for each flight directly affects the number of people that in the future will try to buy a ticket. Depending on the willingness-to-pay of the customers the flight might take off with empty seats or seats sold at a lower price. Therefore, based on the behavior of the customers, a price must be fixed for each type of product in each period. We propose a stochastic dynamic pricing model to solve this problem, applying phase type distributions and renewal processes to model the inter-arrival time between two customers that book a ticket and the probability that a customer buys a ticket. We test this model in a real-world case where as a result the revenue is increased on average by 31 percent."
 

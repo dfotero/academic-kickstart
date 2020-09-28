@@ -36,13 +36,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://www.sciencedirect.com/science/article/abs/pii/S0377221719302504?via%3Dihub
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://www.sciencedirect.com/science/article/abs/pii/S0377221719302504?via%3Dihub
 url_video:
 
 # Featured image

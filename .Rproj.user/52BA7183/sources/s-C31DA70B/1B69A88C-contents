@@ -1,13 +1,13 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Population based cholesterol follow-up policy"
+title: "Working Paper: Population based cholesterol follow-up policy"
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
 date: 
 doi:
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-07-29T01:18:35-04:00
+publishDate: 2020-10-25T01:18:35-04:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

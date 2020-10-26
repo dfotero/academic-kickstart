@@ -1,9 +1,9 @@
 {
-    "path" : "~/GitHub/academic-kickstart/data/themes",
-    "sortOrder" : [
+    "path": "~/GitHub/academic-kickstart/data/themes",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "ascending": true,
+            "columnIndex": 2
         }
     ]
 }

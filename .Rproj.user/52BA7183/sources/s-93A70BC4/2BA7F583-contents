@@ -17,7 +17,7 @@ abstract: "Continuous tracking of patient’s health data through electronic hea
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: 2021-07-22T15:40:00-15:40
-date_end: 2019-07-22T17:10:00-17:10
+date_end: 2021-07-22T17:10:00-17:10
 #all_day: false
 
 # Schedule page publish date (NOT talk date).

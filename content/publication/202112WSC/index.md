@@ -1,7 +1,7 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Optimal timing of airline promotions under dilution (Accepted)"
+title: "Using Longitudinal Health Records to Simulate the Impact of National Treatment Guidelines for Cardiovascular Disease (Accepted)"
 authors: ["Daniel Otero-Leon", "Weiyu Li","Brian T. Denton","Mariel S. Lavieri","Jeremy Sussman","Rodney A. Hayward"]
 date: 
 doi:

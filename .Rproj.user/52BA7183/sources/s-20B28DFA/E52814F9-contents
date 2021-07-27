@@ -1,0 +1,297 @@
+library(aod)
+library(dplyr)
+library(sqldf)
+library(pROC)
+adherence<-read.csv("C:/Users/dfotero/Desktop/results/adherence.csv",header=TRUE)
+
+adherence<-adherence[adherence$type=="Med",]
+
+# model<-lm(PDC~factor(male),data=adherence)
+# summary(model)
+# 
+# model<-lm(PDC~factor(white),data=adherence)
+# summary(model)
+# 
+# model<-lm(PDC~factor(crtsmoker),data=adherence)
+# summary(model)
+# 
+# model<-lm(PDC~age,data=adherence)
+# summary(model)
+# 
+# model<-lm(PDC~totApp,data=adherence)
+# summary(model)
+# 
+# adherence[,13]<-ceiling(adherence$timeApp/90)
+# names(adherence)[13]<-"Quarters"
+# 
+# model<-lm(PDC~Quarters,data=adherence)
+# summary(model)
+# 
+# model<-lm(PDC~prevApp,data=adherence)
+# summary(model)
+
+
+adherence<-adherence[adherence$totApp>0,]
+adherence<-adherence[adherence$timeApp<750,]
+adherence[,13]<-1
+names(adherence)[13]<-"Adhere"
+
+adherence$Adhere[adherence$PDC<80]<-0
+
+logitModel<-glm(Adhere~prevApp,data=adherence,family="binomial")
+summary(logitModel)
+
+adherenceTot<-read.csv("C:/Users/dfotero/Desktop/results/adherenceTot.csv",header=TRUE)
+pdcTime<-read.csv("C:/Users/dfotero/Desktop/results/pdcTime.csv",header=TRUE)
+pdcTime<-pdcTime[order(pdcTime$time,pdcTime$id13,pdcTime$ddate),]
+pdcTime<-data.frame(pdcTime,"nextT"=pdcTime$ddate)
+pdcTime$ddate<-as.Date(pdcTime$ddate)
+pdcTime$nextT<-as.Date(pdcTime$nextT)
+
+
+curLDL<-adherenceTot$ldl[1]
+curId<-adherenceTot$id13[1]
+
+adherenceTot[,19]<-0
+names(adherenceTot)[19]<-"totMed"
+adherenceTot[,20]<-0
+
+for(i in 1:nrow(adherenceTot))
+{
+  if(adherenceTot$id13[i]==curId)
+  {
+    if(adherenceTot$type[i]=="Med" )
+    {
+      adherenceTot$ldl[i]<-curLDL
+    }
+    else
+    {
+      curLDL<-adherenceTot$ldl[i]
+    }
+  }
+  else
+  {
+    curLDL<-adherenceTot$ldl[i]
+    curId<-adherenceTot$id13[i]
+  }
+  
+}
+
+remove<-0
+idR<-0
+acId<-pdcTime$id13[1]
+pdcTime$nextT<-pdcTime$ddate+pdcTime$time-1
+
+for(i in 2:nrow(pdcTime))
+{
+  
+  if(acId != pdcTime$id13[i])
+  {
+    idR<-idR+1
+    remove[idR]<-i-1
+    acId<-pdcTime$id13[i]
+  }
+  
+}
+pdcTime<-pdcTime[-remove,]
+
+adhMed<-adherenceTot[adherenceTot$type=="Med" & adherenceTot$diabetes==0,]
+adhMed$ddate<-as.character(adhMed$ddate)
+pdcTime$ddate<-as.character(pdcTime$ddate)
+pdcTime$nextT<-as.character(pdcTime$nextT)
+
+theData<- sqldf("select pdcTime.*,adhMed.ldl,adhMed.totApp, adhMed.prevApp, adhMed.timeApp, adhMed.male, adhMed.white, adhMed.crtsmoker,adhMed.age from pdcTime left join adhMed on (pdcTime.id13==adhMed.id13 and pdcTime.ddate <= adhMed.ddate and pdcTime.nextT >= adhMed.ddate) ")
+theData<-theData[complete.cases(theData),]
+theData$ldl<-as.numeric(theData$ldl)
+theData$totApp<-as.numeric(theData$totApp)
+theData$prevApp<-as.numeric(theData$prevApp)
+theData$timeApp<-as.numeric(theData$timeApp)
+theData$age<-as.numeric(theData$age)
+theData<- sqldf("select id13, time, ddate, pdc, avg(ldl) as ldl,avg(totApp) as totApp, avg(prevApp) as prevApp, avg(timeApp) as timeApp, avg(male) as male, avg(white) as white, avg(crtsmoker) as crtsmoker, avg(age) as age from theData group by id13, time, ddate, pdc")
+
+theData[,13]<-ifelse(theData$pdc>=0.8,1,0)
+theData[,14]<-0
+
+names(theData)[13]<-"Adhere"
+names(theData)[14]<-"PrevPDC"
+
+for(i in 1:(nrow(theData)-1))
+{
+  if(theData$id13[i]==theData$id13[i+1] & theData$time[i]==theData$time[i+1])
+  {
+    theData$PrevPDC[i+1]<-theData$pdc[i]
+  }
+}
+
+#---------------------------------------------------------
+#
+# Average per data point
+#
+#--------------------------------------------------------
+
+
+theDataTime<-theData[theData$time==365 & theData$PrevPDC>0,]
+
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+timeApp+prevApp+male+white+crtsmoker+age+totMed,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,timeApp=theTest$timeApp,prevApp=theTest$prevApp,white=theTest$white,male=theTest$male,crtsmoker=theTest$crtsmoker,age=theTest$age,totMed=theTest$totMed),type="response")
+par(pty = "s")
+myRoc<-roc(theTest$Adhere, thePrediction, plot=TRUE, legacy.axes=TRUE, percent=TRUE, col="#377eb8", lwd=2, print.auc=TRUE, main="Adhere ~ All variables - Women")
+
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]
+
+theDataTime<-theData[theData$time==730 & theData$PrevPDC>0,]
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+timeApp+prevApp+white+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,timeApp=theTest$timeApp,prevApp=theTest$prevApp,white=theTest$white,PrevPDC=theTest$PrevPDC),type="response")
+
+myRoc<-plot.roc(theTest$Adhere, thePrediction, percent=TRUE, col="#4daf4a", lwd=2, print.auc=TRUE, add=TRUE, print.auc.y=40)
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]
+
+theDataTime<-theData[theData$time==1095 & theData$PrevPDC>0,]
+
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+timeApp+prevApp+white+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,timeApp=theTest$timeApp,prevApp=theTest$prevApp,white=theTest$white,PrevPDC=theTest$PrevPDC),type="response")
+myRoc<-plot.roc(theTest$Adhere, thePrediction, percent=TRUE, col="red", lwd=2, print.auc=TRUE, add=TRUE, print.auc.y=30)
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]
+
+
+
+model<-glm(Adhere~age+totApp+timeApp+prevApp+male+white+crtsmoker+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(age=theTest$age,totApp=theTest$totApp,timeApp=theTest$timeApp,prevApp=theTest$prevApp,male=theTest$male,white=theTest$white,crtsmoker=theTest$crtsmoker,PrevPDC=theTest$PrevPDC),type="response")
+
+
+#---------------------------------------------------------
+#
+# Average per patient
+#
+#--------------------------------------------------------
+
+theDataT<-theData[theData$PrevPDC>0,]
+theDataP<- sqldf("select id13, time, avg(pdc) as pdc, avg(totApp) as totApp, avg(prevApp) as prevApp, avg(timeApp) as timeApp, avg(male) as male, avg(white) as white, avg(crtsmoker) as crtsmoker, avg(age) as age, avg(ldl) as ldl, avg(PrevPDC) as PrevPDC from theDataT group by id13, time ")
+theDataP[,13]<-ifelse(theDataP$pdc>=0.8,1,0)
+names(theDataP)[13]<-"Adhere"
+
+
+theDataTime<-theDataP[theDataP$time==365,]
+
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+prevApp+white+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,prevApp=theTest$prevApp,white=theTest$white,PrevPDC=theTest$PrevPDC),type="response")
+
+par(pty = "s")
+myRoc<-roc(theTest$Adhere, thePrediction, plot=TRUE, legacy.axes=TRUE, percent=TRUE, col="#377eb8", lwd=2, print.auc=TRUE, main="Adhere ~ All variables - Women")
+
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]
+
+theDataTime<-theDataP[theDataP$time==730,]
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+prevApp+white+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,prevApp=theTest$prevApp,white=theTest$white,PrevPDC=theTest$PrevPDC),type="response")
+myRoc<-plot.roc(theTest$Adhere, thePrediction, percent=TRUE, col="#4daf4a", lwd=2, print.auc=TRUE, add=TRUE, print.auc.y=40)
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]
+
+theDataTime<-theDataP[theDataP$time==1095,]
+
+dataF<-theDataTime
+smp_size <- floor(0.67 * nrow(dataF))
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(nrow(dataF)), size = smp_size)
+
+theTrain<-dataF[train_ind, ]
+theTest<-dataF[-train_ind, ]
+
+numTr1<-nrow(theTrain)
+numTr2<-nrow(theTest)
+
+model<-glm(Adhere~ldl+totApp+prevApp+white+PrevPDC,data=theTrain,family="binomial")
+summary(model)
+
+thePrediction<-predict(model,list(ldl=theTest$ldl,totApp=theTest$totApp,prevApp=theTest$prevApp,white=theTest$white,PrevPDC=theTest$PrevPDC),type="response")
+myRoc<-plot.roc(theTest$Adhere, thePrediction, percent=TRUE, col="red", lwd=2, print.auc=TRUE, add=TRUE, print.auc.y=30)
+threshold<-data.frame(threshold=myRoc$thresholds,"TP"=myRoc$sensitivities,"FP"=100-myRoc$specificities,theSum=myRoc$sensitivities+myRoc$specificities)
+threshold<-threshold[order(-threshold$theSum),]
+threshold[1,]

@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   company = "IOE 316: Introduction to Markov Processes"
   company_url = "https://bulletin.engin.umich.edu/courses/ioe/"
   location = "University of Michigan, Ann Arbor, MI, USA"
-  date_start = "2021-09-01"
+  date_start = "2021-08-01"
   date_end = 
   description = """
   Topics Taught: Stochastic Modeling, Exponential distribution, Poisson Process, Markov Chains, and Dynamic Programming.

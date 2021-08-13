@@ -3,22 +3,22 @@
     "path": "~/GitHub/academic-kickstart/content/home/experience.md",
     "project_path": "content/home/experience.md",
     "type": "markdown",
-    "hash": "2944865662",
+    "hash": "204011039",
     "contents": "",
     "dirty": false,
     "created": 1628874790058.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "59,31",
-        "scrollLine": "45"
+        "cursorPosition": "24,23",
+        "scrollLine": "10"
     },
     "folds": "",
-    "lastKnownWriteTime": 1628877048,
+    "lastKnownWriteTime": 1628877420,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1628877048572,
+    "last_content_update": 1628877420100,
     "read_only": false,
     "read_only_alternatives": []
 }

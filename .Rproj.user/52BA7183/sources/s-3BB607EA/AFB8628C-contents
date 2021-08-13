@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = "https://bulletin.engin.umich.edu/courses/ioe/"
   location = "University of Michigan, Ann Arbor, MI, USA"
   date_start = "2021-08-01"
-  date_end = """
+  date_end =
   description = """
   Topics Taught: Stochastic Modeling, Exponential distribution, Poisson Process, Markov Chains, and Dynamic Programming.
   """
@@ -34,7 +34,7 @@ date_format = "Jan 2006"
   company_url = "https://catalogo.uniandes.edu.co/2019/Catalogo/Cursos/IIND/2000/IIND-2104"
   location = "Universidad de los Andes, Bogota, Colombia"
   date_start = "2012-08-01"
-  date_end = """
+  date_end =
   description = """
   Topics Taught: Stochastic Modeling, Exponential distribution, Poisson Process, Markov Chains, and Dynamic Programming.
   """

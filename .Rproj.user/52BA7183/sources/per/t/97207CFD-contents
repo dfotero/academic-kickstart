@@ -28,13 +28,10 @@ interests:
 
 education:
   courses:
-  - course: BSc in Industrial Engineering with Mathematics Minor
-    institution: Universidad de los Andes, Colombia
-    year: 2010  
   - course: MSc in Industrial Engineering
     institution: Universidad de los Andes, Colombia
     year: 2012
-  - course: BSc in Industrial Engineering
+  - course: BSc in Industrial Engineering with Mathematics Minor
     institution: Universidad de los Andes, Colombia
     year: 2010
 

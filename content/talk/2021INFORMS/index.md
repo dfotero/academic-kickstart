@@ -24,7 +24,7 @@ date_end: 2021-10-26T12:30:00-12:30
 publishDate: 2020-09-24T12:00:00-12:00
 
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
-tags: ["Healthcare","Prioritization,"Cardiovascular diseases","Bandit Models","Conference Talk"]
+tags: ["Healthcare","Prioritization","Cardiovascular diseases","Bandit Models","Conference Talk"]
 
 # Is this a featured talk? (true/false)
 featured: false

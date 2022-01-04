@@ -1,24 +1,24 @@
 {
-    "id": "9DF77B4E",
-    "path": "~/GitHub/academic-kickstart/content/publication/201909EJOR/index.md",
-    "project_path": "content/publication/201909EJOR/index.md",
+    "id": "A39DB33A",
+    "path": "~/GitHub/academic-kickstart/content/talk/2021INFORMSHealthcare/index.md",
+    "project_path": "content/talk/2021INFORMSHealthcare/index.md",
     "type": "markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1641259307591.0,
+    "created": 1641260540568.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
-        "cursorPosition": "5,6",
+        "cursorPosition": "48,11",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601253948,
+    "lastKnownWriteTime": 1627426368,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601253948,
+    "last_content_update": 1627426368,
     "read_only": false,
     "read_only_alternatives": []
 }

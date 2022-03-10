@@ -1,24 +1,24 @@
 {
-    "id": "A39DB33A",
-    "path": "~/GitHub/academic-kickstart/content/talk/2021INFORMSHealthcare/index.md",
-    "project_path": "content/talk/2021INFORMSHealthcare/index.md",
+    "id": "CE156B8F",
+    "path": "~/GitHub/academic-kickstart/content/authors/admin/_index.md",
+    "project_path": "content/authors/admin/_index.md",
     "type": "markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1641260540568.0,
+    "created": 1646951155828.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
-        "cursorPosition": "48,11",
+        "cursorPosition": "78,136",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1627426368,
+    "lastKnownWriteTime": 1641580917,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1627426368,
+    "last_content_update": 1641580917,
     "read_only": false,
     "read_only_alternatives": []
 }

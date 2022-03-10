@@ -1,24 +1,24 @@
 {
-    "id": "C9F57DE0",
+    "id": "85FC9B48",
     "path": "~/GitHub/academic-kickstart/content/publication/202112WSC/index.md",
     "project_path": "content/publication/202112WSC/index.md",
     "type": "markdown",
-    "hash": "2956312627",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1646849111733.0,
+    "created": 1646950962124.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 2,
     "properties": {
-        "cursorPosition": "45,65",
-        "scrollLine": "22"
+        "cursorPosition": "39,10",
+        "scrollLine": "20"
     },
     "folds": "",
     "lastKnownWriteTime": 1646849182,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1646849182218,
+    "last_content_update": 1646849182,
     "read_only": false,
     "read_only_alternatives": []
 }

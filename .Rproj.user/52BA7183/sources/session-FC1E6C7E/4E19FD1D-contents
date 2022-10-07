@@ -17,7 +17,7 @@ abstract: "Long-term adherence to medication helps prevent chronic diseases. Whe
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: 2022-10-18T17:00:00-17:00
-date_end: 2021-10-26T18:15:00-18:15
+date_end: 2022-10-18T18:15:00-18:15
 #all_day: false
 
 # Schedule page publish date (NOT talk date).

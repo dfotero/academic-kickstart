@@ -3,9 +3,9 @@
     "path": "~/GitHub/academic-kickstart/content/talk/2022INFORMS/index.md",
     "project_path": "content/talk/2022INFORMS/index.md",
     "type": "markdown",
-    "hash": "0",
+    "hash": "585841407",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1665184982830.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -16,11 +16,11 @@
         "scrollLine": "13"
     },
     "folds": "",
-    "lastKnownWriteTime": 1633543618,
+    "lastKnownWriteTime": 1665185327,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1665185174982,
+    "last_content_update": 1665185327234,
     "read_only": false,
     "read_only_alternatives": []
 }

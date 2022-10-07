@@ -1,30 +1,30 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Talk: Patient Prioritization Model With Limited Resources And Stochastic Compliance."
-event: "INFORMS Annual Meeting 2021"
-event_url: "http://meetings2.informs.org/wordpress/anaheim2021/"
-location: "Anaheim Convention Center"
+title: "Talk: Prediction of Long-Term Medication Adherence and Its Potential Benefits for Intervention."
+event: "INFORMS Annual Meeting 2022"
+event_url: "https://meetings.informs.org/wordpress/indianapolis2022/"
+location: "Indiana Convention Center"
 address: 
   street:
-  city: "Anaheim"
-  region: "California"
+  city: "Indianapolis"
+  region: "Indiana"
   postcode: 
   country: "United States"
 summary:
-abstract: "Physicians seek to prevent chronic diseases by tracking the patients’ healthcare behavior. They handle a large heterogeneous panel of patients, which is costly or demands multiple resources. Unfortunately, physicians do not count on infinite resources, for which they need to prioritize the panel. Not prioritize patients may forgo needed treatment and suffer adverse events related to the disease. Additionally, despite the physician’s efforts, prioritize patients may not adhere to medication and follow-up recommendations. We present a Multi-armed bandit model to maximize the panel’s total life years gain. Further, we tested the model using longitudinal data for cardiovascular diseases in a large cohort of patients seen in the national Veterans Affairs health system. Finally, we study the resulting prioritization policies and their structure."
+abstract: "Long-term adherence to medication helps prevent chronic diseases. When patients adhere poorly, physicians intervene to increase this adherence. Therefore, knowing which patients will stop adhering would help distribute the available resources effectively. We study a long-term adherence prediction model using dynamic logistic regression that can inform clinicians about which patients are likely to stop adhering and when. We applied our model to longitudinal data for cardiovascular diseases in a large cohort of patients seen in the national Veterans Affairs health system. Additionally, we show the importance of including past adherence to increase prediction accuracy. Finally, we assess the potential benefits of using the prediction model to allocate interventions to patients under budget constraints."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2021-10-26T11:00:00-11:00
-date_end: 2021-10-26T12:30:00-12:30
+date: 2022-10-18T17:00:00-17:00
+date_end: 2021-10-26T18:15:00-18:15
 #all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: 2020-09-24T12:00:00-12:00
 
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri"]
-tags: ["Healthcare","Prioritization","Cardiovascular diseases","Bandit Models","Conference Talk"]
+tags: ["Healthcare","Adherence","Cardiovascular diseases","Dynamic Forecasting","Conference Talk"]
 
 # Is this a featured talk? (true/false)
 featured: false

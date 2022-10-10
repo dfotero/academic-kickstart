@@ -16,8 +16,8 @@ publishDate: 2022-10-01T01:18:35-04:00
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication:
-publication_short:
+publication: "Health Care Management Science"
+publication_short:"HCMS"
 
 abstract: "Preventing chronic diseases is an essential aspect of medical care. To prevent chronic diseases, physicians focus on monitoring their risk factors and prescribing the necessary medication. The optimal monitoring policy depends on the patient's risk factors and demographics. Monitoring too frequently may be unnecessary and costly; on the other hand, monitoring the patient infrequently means the patient may forgo needed treatment and experience adverse events related to the disease. We propose a finite horizon and finite-state Markov decision process to define monitoring policies. To build our Markov decision process, we estimate stochastic models based on longitudinal observational data from electronic health records for a large cohort of patients seen in the national U.S. Veterans Affairs health system. We use our model to study policies for whether or when to assess the need for cholesterol-lowering medications. We further use our model to investigate the role of gender and race on optimal monitoring policies."
 

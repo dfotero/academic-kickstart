@@ -1,25 +1,25 @@
 {
-    "id": "2624F76C",
+    "id": "80670730",
     "path": "~/GitHub/academic-kickstart/content/publication/Follow_up/index.md",
     "project_path": "content/publication/Follow_up/index.md",
     "type": "markdown",
-    "hash": "1621833409",
+    "hash": "52181107",
     "contents": "",
     "dirty": false,
-    "created": 1665429761142.0,
+    "created": 1665607544753.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 1,
     "properties": {
-        "cursorPosition": "18,45",
+        "cursorPosition": "3,16",
         "scrollLine": "0",
         "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1665429997,
+    "lastKnownWriteTime": 1665607561,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1665429997838,
+    "last_content_update": 1665607561832,
     "read_only": false,
     "read_only_alternatives": []
 }

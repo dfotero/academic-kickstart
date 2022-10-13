@@ -36,7 +36,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: preprint.pdf
+url_pdf: publication/follow_up/preprint.pdf
 url_code:
 url_dataset:
 url_poster:

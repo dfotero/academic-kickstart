@@ -3,7 +3,7 @@
     "path": "~/GitHub/academic-kickstart/content/home/publications.md",
     "project_path": "content/home/publications.md",
     "type": "markdown",
-    "hash": "3515262556",
+    "hash": "1605985627",
     "contents": "",
     "dirty": false,
     "created": 1666671442403.0,
@@ -11,16 +11,16 @@
     "relative_order": 5,
     "properties": {
         "cursorPosition": "39,10",
-        "scrollLine": "12",
+        "scrollLine": "8",
         "source_window_id": "",
         "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1666671448,
+    "lastKnownWriteTime": 1666671768,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1666671448717,
+    "last_content_update": 1666671768107,
     "read_only": false,
     "read_only_alternatives": []
 }

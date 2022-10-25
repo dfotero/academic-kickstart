@@ -3,7 +3,7 @@
     "path": "~/GitHub/academic-kickstart/content/newslist.dat",
     "project_path": "content/newslist.dat",
     "type": "text",
-    "hash": "1673281566",
+    "hash": "3782105745",
     "contents": "",
     "dirty": false,
     "created": 1666721510541.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "6,145",
+        "cursorPosition": "4,234",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1666725939,
+    "lastKnownWriteTime": 1666726057,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1666725939164,
+    "last_content_update": 1666726057476,
     "read_only": false,
     "read_only_alternatives": []
 }

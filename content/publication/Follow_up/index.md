@@ -36,13 +36,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: publication/follow_up/preprint.pdf
+url_pdf:
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://doi.org/10.1007/s10729-022-09621-4
 url_video:
 
 # Featured image

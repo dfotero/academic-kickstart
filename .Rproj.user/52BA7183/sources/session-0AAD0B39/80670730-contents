@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Accepted: Monitoring policy in the context of preventive treatment of cardiovascular disease (2022)"
+title: "Monitoring policy in the context of preventive treatment of cardiovascular disease (2022)"
 authors: ["Daniel Otero-Leon", "Brian T. Denton","Mariel S. Lavieri", "Jeremy Sussman", "Rodney Hayward"]
 date: 2022-10-12
 doi: ""
